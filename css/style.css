@@ -1,0 +1,159 @@
+/* yellow background dark blue text */
+.inline-element {
+  background-color: yellow;
+  font-family: 'Playfair Display', serif;
+  padding-left: 50px; 
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+/* white background small blue grey text */
+.block-element2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #8292ad;
+  padding-left: 50px; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* grey background blue grey text */
+.block-element {
+  background-color: #dcdfe5;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 22pt;
+  color: #8292ad;
+  padding-left: 100px; 
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+/* white background med size dark blue text */
+.inline-element2 {
+  font-family: 'Playfair Display', serif;
+  padding-left: 50px; 
+  padding-bottom: 5px;
+}
+
+/* button */
+a:link {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 22pt;
+  color: #ffffff;
+  background-color: #2a3e5e;
+  text-decoration: none;
+  padding-left: 20px; 
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+a:visited {
+  color: yellow;
+}
+
+a:hover {
+  color: #2a3e5e;
+  background-color: yellow;
+}
+
+a:active{
+  color: #8292ad;
+}
+
+/* large headline */
+h1 {
+  color: #2a3e5e;
+  font-size: 48pt;
+}
+
+/* small headline */
+h4 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2a3e5e;
+  font-size: 21pt;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* p:first-child {
+  margin-top: 0
+}
+
+.section {
+  min-height: 100vh;
+  margin-bottom: 15px;
+  padding: 5px;
+  clear: both;
+}
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+/* gallery light grey background */
+.content {
+  background-color: #dcdfe5;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.media .photo {
+  display: block;
+}
+
+.media .caption {
+  display: block;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2a3e5e;
+  padding: 5px;
+}
+
+/* Basic floats and clears */
+
+.media {
+  display: inline-block;
+  margin: 0 0 10px 10px;
+  background: white;
+}
+
+.media .photo {
+  display: block;
+  width: 100%
+}
+
+.cleared .media {
+  clear: right;
+}
+
+/* Layout styles */
+.layout .content {
+  width: 60%;
+  float: left;
+}
+
+.media {
+  display: block;
+  width: 32%;
+  float: left;
+  margin: 10;
+  border: 2px solid white;
+}
+
+
+@media all and (max-width: 300px) {
+  .media {
+    width: 100%; 
+  }
+  
+  .media .photo {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+}
